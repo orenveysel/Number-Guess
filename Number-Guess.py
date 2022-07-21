@@ -9,7 +9,7 @@
 
 import random
 
-x = random.randint(1,100)
+x = random.randint(1, 100)
 
 print("***** WELCOME TO THE NUMBER GUESSING GAME *****")
 
@@ -20,7 +20,7 @@ i = 0
 score = 100
 while i < live:
     a = int(input("Take a guess: "))
-    
+
     if i + 1 == live:
         print("Your lives are over!")
         print(f"The number was {x}:( ")
@@ -33,7 +33,6 @@ while i < live:
     elif a < x:
         print("Up!!")
     elif a > x:
-        print("Down!!")   
+        print("Down!!")
     i += 1
     score -= point
-    
